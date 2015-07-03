@@ -148,7 +148,7 @@ class FaceView: UIView
         smilePath.stroke()
         
         //--so it looks like by making a public var of blahDataSource of the FaceViewDataSourceDelegate type, we can access .smilinessForFaceView even though that method does not exist in the FaceView class.  That method resides in HappinessViewController.  This is exactly why the HappinessViewController has that method, and is why we consider HappinessViewController to conform to the FaceViewDataSource protocol
-        //I tested this: you pass self to the .smilinessForFaceView method.  The self is a FaceView. [This also explains the line in HappinessViewControl that says faceView.dataSource = self .  That is the way that faceView.dataSource is of type FaceView.  We declared dataSource to be a public weak var dataSource: DataSourceFaceView?.  So, now The method returns a Double? that is the smiliness, after you passed self to it:
+        //I tested this: you pass self to the .smilinessForFaceView method.  The self is a FaceView. [This also explains the line in HappinessViewControl that says faceView.dataSource = self .  That is the way that faceView.dataSource is of type FaceView.  We declared dataSource to be a public weak var dataSource: DataSourceFaceView?.  So, now The method returns a Double? that is the smiliness, after you passed self to it:.
         let blahTestIgnore = blahDataSource?.smilinessForFaceView(self)
         //let blahblahTestIgnor = blahDataSource?.smilinessForFaceView(self) 
                 if blahTestIgnore != nil {print ("blahTestIgnor is \(blahTestIgnore)")}
