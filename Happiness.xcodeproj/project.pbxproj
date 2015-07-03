@@ -14,6 +14,9 @@
 		295397A61B407D6700A2905F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 295397A41B407D6700A2905F /* LaunchScreen.storyboard */; };
 		295397B11B407D6700A2905F /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295397B01B407D6700A2905F /* HappinessTests.swift */; };
 		295397BC1B407D6700A2905F /* HappinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 295397BB1B407D6700A2905F /* HappinessUITests.swift */; };
+		29FC4CC01B461984003AB34E /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FC4CBF1B461984003AB34E /* FaceView.swift */; };
+		29FC4CC21B46199C003AB34E /* LinearCongruentialGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FC4CC11B46199C003AB34E /* LinearCongruentialGenerator.swift */; };
+		29FC4CC41B461A45003AB34E /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FC4CC31B461A45003AB34E /* HappinessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,18 +38,21 @@
 
 /* Begin PBXFileReference section */
 		295397981B407D6700A2905F /* Happiness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happiness.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2953979B1B407D6700A2905F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2953979B1B407D6700A2905F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Happiness/AppDelegate.swift; sourceTree = "<group>"; };
 		2953979D1B407D6700A2905F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		295397A01B407D6700A2905F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		295397A21B407D6700A2905F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		295397A21B407D6700A2905F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Happiness/Assets.xcassets; sourceTree = "<group>"; };
 		295397A51B407D6700A2905F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		295397A71B407D6700A2905F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		295397A71B407D6700A2905F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Happiness/Info.plist; sourceTree = "<group>"; };
 		295397AC1B407D6700A2905F /* HappinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		295397B01B407D6700A2905F /* HappinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessTests.swift; sourceTree = "<group>"; };
 		295397B21B407D6700A2905F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		295397B71B407D6700A2905F /* HappinessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		295397BB1B407D6700A2905F /* HappinessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessUITests.swift; sourceTree = "<group>"; };
 		295397BD1B407D6700A2905F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29FC4CBF1B461984003AB34E /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		29FC4CC11B46199C003AB34E /* LinearCongruentialGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearCongruentialGenerator.swift; sourceTree = "<group>"; };
+		29FC4CC31B461A45003AB34E /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,10 @@
 				295397AF1B407D6700A2905F /* HappinessTests */,
 				295397BA1B407D6700A2905F /* HappinessUITests */,
 				295397991B407D6700A2905F /* Products */,
+				2953979B1B407D6700A2905F /* AppDelegate.swift */,
+				295397A21B407D6700A2905F /* Assets.xcassets */,
+				295397A71B407D6700A2905F /* Info.plist */,
+				29FC4CC11B46199C003AB34E /* LinearCongruentialGenerator.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +107,11 @@
 		2953979A1B407D6700A2905F /* Happiness */ = {
 			isa = PBXGroup;
 			children = (
-				2953979B1B407D6700A2905F /* AppDelegate.swift */,
 				2953979D1B407D6700A2905F /* ViewController.swift */,
+				29FC4CC31B461A45003AB34E /* HappinessViewController.swift */,
 				2953979F1B407D6700A2905F /* Main.storyboard */,
-				295397A21B407D6700A2905F /* Assets.xcassets */,
 				295397A41B407D6700A2905F /* LaunchScreen.storyboard */,
-				295397A71B407D6700A2905F /* Info.plist */,
+				29FC4CBF1B461984003AB34E /* FaceView.swift */,
 			);
 			path = Happiness;
 			sourceTree = "<group>";
@@ -257,6 +266,9 @@
 			files = (
 				2953979E1B407D6700A2905F /* ViewController.swift in Sources */,
 				2953979C1B407D6700A2905F /* AppDelegate.swift in Sources */,
+				29FC4CC01B461984003AB34E /* FaceView.swift in Sources */,
+				29FC4CC21B46199C003AB34E /* LinearCongruentialGenerator.swift in Sources */,
+				29FC4CC41B461A45003AB34E /* HappinessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +495,7 @@
 				295397C21B407D6700A2905F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		295397C31B407D6700A2905F /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +504,7 @@
 				295397C51B407D6700A2905F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		295397C61B407D6700A2905F /* Build configuration list for PBXNativeTarget "HappinessUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +513,7 @@
 				295397C81B407D6700A2905F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
